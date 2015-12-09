@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+ <item android:state_pressed="true" android:drawable="@drawable/open1" /> //表示按钮View处于按下状态的图片
+ <item android:state_focused="true" android:drawable="@drawable/open1" />//表示按钮View获取焦点时的图片
+ <item android:drawable="@drawable/open" />//表示View默认的图片
+</selector>

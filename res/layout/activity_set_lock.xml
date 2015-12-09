@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yzd.smartgarage.activity.SetLockActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/top_bak"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/top"
+            android:paddingTop="0dp" >
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="back"
+                android:text="@string/back"
+                android:visibility="visible"
+                android:textColor="@color/switch_thumb_material_light"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/handpwd"
+                android:textColor="@color/switch_thumb_material_light"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#334455"
+            android:paddingTop="0dp" >
+
+            <com.yzd.smartgarage.util.LockPatternView
+                xmlns:app="http://schemas.android.com/apk/res/com.wgs.jiesuo"
+                android:id="@+id/lpv_lock"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:background="#334455" />
+            
+            <TextView
+                android:id="@+id/forgetpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lpv_lock"
+                android:layout_centerHorizontal="true"
+                android:text="@string/forgetpwd"
+                android:textSize="15sp"
+                android:textColor="@color/switch_thumb_material_light"
+                android:layout_marginBottom="30dp"
+                android:visibility="invisible" />
+
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

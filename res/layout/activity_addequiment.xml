@@ -1,0 +1,176 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bak"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/top" 
+        android:paddingTop="0dp" >
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:textColor="@color/switch_thumb_material_light"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:onClick="back"
+            android:text="@string/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/switch_thumb_material_light"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/addequiment"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/show_equ_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" 
+        android:clickable="true"
+        android:onClick="startCamera"
+        android:background="@drawable/equ_img"/>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"  >
+
+        <TextView
+            android:id="@+id/device_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:text="@string/device_channel" />
+
+        <TextView
+            android:id="@+id/device_channel_edit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/device_channel"
+            android:textSize="15sp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"  >
+
+        <TextView
+            android:id="@+id/device_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:text="@string/device_key" />
+
+        <EditText
+            android:id="@+id/device_key_edit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/device_key"
+            android:textSize="15sp"
+            android:text="3721"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"  >
+
+        <TextView
+            android:id="@+id/device_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:text="@string/device_context" />
+
+        <EditText
+            android:id="@+id/device_context_edit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/device_context"
+            android:textSize="15sp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <!-- <RadioGroup
+        android:id="@+id/controltype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/jog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/jog" />
+        <RadioButton
+            android:id="@+id/linkage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/linkage" />
+    </RadioGroup> -->
+    
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp" 
+        android:background="@color/top"
+        android:text="@string/saveequ"
+        android:textColor="@color/switch_thumb_material_light"
+        android:textSize="15sp"
+        android:onClick="saveequ"/>
+    
+    <!-- <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp" 
+        android:background="@color/top"
+        android:text="@string/savefromscan"
+        android:textColor="@color/switch_thumb_material_light"
+        android:textSize="15sp"
+        android:onClick="savefromscan"/> -->
+    
+    <TextView android:id="@+id/showmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="@string/equexist"
+        android:visibility="invisible"
+        android:textSize="15sp"/>
+
+</LinearLayout>  
+</ScrollView >
